@@ -10,13 +10,14 @@ public class Subscriber implements Observer {
     }
 
     @Override
-    public void update() {
-        System.out.println("Hey " + name + ", " + channel.title);
-    }
-
-    @Override
     public void subscriberChannel(Channel ch)
     {
         channel = ch;
     }
+
+    @Override
+    public void update() {
+        System.out.println("Hey " + name + ", " + channel.title);
+    }
+
 }
